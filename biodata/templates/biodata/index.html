@@ -1,0 +1,671 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website Biodata Maulana Ilham Romadhon — Mahasiswa Sains Data, Fakultas Sains dan Teknologi" />
+  <title>Maulana Ilham Romadhon | Mahasiswa Sains Data</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{% static 'biodata/css/style.css' %}" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav class="navbar" role="navigation" aria-label="Menu utama">
+  <div class="nav-brand">MIR.</div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#tentang">Tentang Saya</a></li>
+    <li><a href="#biodata">Biodata</a></li>
+    <li><a href="#pendidikan">Pendidikan</a></li>
+    <li><a href="#skill">Skill</a></li>
+    <li><a href="#proyek">Proyek</a></li>
+    <li><a href="#galeri">Galeri</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+
+  <div class="nav-controls">
+    <button class="dark-toggle" aria-label="Toggle dark mode" title="Toggle Dark/Light Mode">Mode</button>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" aria-label="Menu mobile">
+  <a href="#home">Home</a>
+  <a href="#tentang">Tentang Saya</a>
+  <a href="#biodata">Biodata</a>
+  <a href="#pendidikan">Pendidikan</a>
+  <a href="#skill">Skill</a>
+  <a href="#proyek">Proyek</a>
+  <a href="#galeri">Galeri</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+
+<!-- ============================================================
+     HERO — HOME
+     ============================================================ -->
+<section id="home">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="hero-eyebrow">
+        <span></span> Mahasiswa Aktif &middot; 2024/2025
+      </div>
+
+      <h1 class="hero-name">
+        Maulana<br>
+        <span class="gold">Ilham</span> Romadhon
+      </h1>
+
+      <p class="hero-title">
+        Mahasiswa <strong style="color:var(--gold)">Sains Data</strong> &mdash;
+        Fakultas Sains dan Teknologi
+      </p>
+
+      <p class="hero-desc">
+        Selamat datang di website biodata saya. Saya adalah mahasiswa
+        Sains Data yang memiliki minat pada bidang
+        <strong style="color:var(--gold-light)">Data Science</strong>,
+        <strong style="color:var(--gold-light)">Web Development</strong>,
+        <strong style="color:var(--gold-light)">Artificial Intelligence</strong>,
+        dan Teknologi Informasi.
+      </p>
+
+      <div class="hero-badges stagger">
+        <span class="badge">Python</span>
+        <span class="badge">Data Science</span>
+        <span class="badge">Django</span>
+        <span class="badge">AI / ML</span>
+        <span class="badge">Data Analysis</span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#kontak" class="btn-primary">Hubungi Saya</a>
+        <a href="#biodata" class="btn-outline">Lihat Biodata</a>
+      </div>
+    </div>
+
+    <!-- Photo -->
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame">
+        <img class="hero-photo" src="{% static 'biodata/img/MIR.jpg' %}" alt="Maulana Ilham Romadhon" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     TENTANG SAYA
+     ============================================================ -->
+<section id="tentang">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">Tentang <span>Saya</span></h2>
+    <div class="section-divider fade-up"></div>
+
+    <div class="tentang-grid">
+      <!-- Photo -->
+      <div class="tentang-photo-wrap fade-left">
+        <div class="tentang-photo-card">
+          <img src="{% static 'biodata/img/tentang1.jpeg' %}" alt="Maulana Ilham Romadhon - Foto Aktivitas" />
+          <div class="photo-caption">
+            <strong>Maulana Ilham Romadhon</strong>
+            <span>Mahasiswa Sains Data</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="tentang-content">
+        <div class="tentang-block fade-up">
+          <h3>Profil Singkat</h3>
+          <p>
+            Saya adalah Maulana Ilham Romadhon, mahasiswa Program Studi Sains Data di
+            Fakultas Sains dan Teknologi. Saya memiliki semangat belajar yang tinggi
+            dalam bidang teknologi dan pengolahan data. Dengan dasar yang kuat dalam
+            matematika dan statistika, saya terus mengembangkan kemampuan teknis
+            di bidang pemrograman, analisis data, dan pengembangan web.
+          </p>
+        </div>
+
+        <div class="tentang-block fade-up">
+          <h3>Minat &amp; Bidang Fokus</h3>
+          <ul>
+            <li>Data Science dan Machine Learning</li>
+            <li>Pengembangan Web (Django &amp; Python)</li>
+            <li>Artificial Intelligence</li>
+            <li>Visualisasi dan Analisis Data</li>
+            <li>Teknologi Informasi</li>
+          </ul>
+        </div>
+
+        <div class="tentang-block fade-up">
+          <h3>Tujuan Karir</h3>
+          <p>
+            Saya memiliki visi untuk menjadi seorang <em style="color:var(--gold-light)">Data Scientist</em> atau
+            <em style="color:var(--gold-light)">Machine Learning Engineer</em> yang berkontribusi pada
+            inovasi teknologi di Indonesia. Saya ingin memanfaatkan data sebagai
+            dasar pengambilan keputusan strategis yang memberikan dampak nyata
+            bagi masyarakat.
+          </p>
+        </div>
+
+        <div class="tentang-block fade-up">
+          <h3>Motivasi Belajar</h3>
+          <p>
+            Setiap hari saya termotivasi oleh keyakinan bahwa data adalah bahasa
+            masa depan. Saya percaya bahwa dengan menguasai kemampuan mengolah
+            dan menginterpretasi data, saya dapat menciptakan solusi inovatif
+            yang mampu menjawab tantangan nyata di era digital ini.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     BIODATA
+     ============================================================ -->
+<section id="biodata">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">Data <span>Diri</span></h2>
+    <div class="section-divider fade-up"></div>
+
+    <div class="biodata-card-grid stagger">
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Nama Lengkap</div>
+          <div class="biodata-value">Maulana Ilham Romadhon</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">NIM</div>
+          <div class="biodata-value">23090240025</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Tempat Lahir</div>
+          <div class="biodata-value">Batang</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Tanggal Lahir</div>
+          <div class="biodata-value">04 Oktober 2005</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Jenis Kelamin</div>
+          <div class="biodata-value">Laki-laki</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Agama</div>
+          <div class="biodata-value">Islam</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Alamat</div>
+          <div class="biodata-value">Batang</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Email</div>
+          <div class="biodata-value">maulanailham4455@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Nomor HP</div>
+          <div class="biodata-value">087745327237</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Program Studi</div>
+          <div class="biodata-value">Sains Data</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Fakultas</div>
+          <div class="biodata-value">Sains dan Teknologi</div>
+        </div>
+      </div>
+
+      <div class="biodata-card fade-up">
+        <div class="biodata-icon"></div>
+        <div class="biodata-info">
+          <div class="biodata-label">Universitas</div>
+          <div class="biodata-value">Universitas Islam Negeri Salatiga</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PENDIDIKAN
+     ============================================================ -->
+<section id="pendidikan">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">Riwayat <span>Pendidikan</span></h2>
+    <div class="section-divider fade-up"></div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-period">Sekarang</div>
+          <div class="timeline-school">Program Studi Sains Data</div>
+          <div class="timeline-level">Universitas Islam Negeri Salatiga &middot; S1</div>
+          <span class="timeline-badge">Aktif &middot; Mahasiswa</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-period">2021 &ndash; 2024</div>
+          <div class="timeline-school">SMK Negeri 1 Warungasem</div>
+          <div class="timeline-level">Teknik Kendaraan Ringan dan Otomotif</div>
+          <span class="timeline-badge">Lulus</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-period">2018 &ndash; 2021</div>
+          <div class="timeline-school">SMP Negeri 1 Warungasem</div>
+          <div class="timeline-level">SMP &middot; Sekolah Menengah Pertama</div>
+          <span class="timeline-badge">Lulus</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-period">2012 &ndash; 2018</div>
+          <div class="timeline-school">MIS Siderejo</div>
+          <div class="timeline-level">MI &middot; Madrasah Ibtidaiyah</div>
+          <span class="timeline-badge">Lulus</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SKILL
+     ============================================================ -->
+<section id="skill">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">Kemampuan &amp; <span>Skill</span></h2>
+    <div class="section-divider fade-up"></div>
+
+    <div class="skills-grid">
+      <div>
+        <div class="skill-item fade-up">
+          <div class="skill-header">
+            <span class="skill-name">Python</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item fade-up">
+          <div class="skill-header">
+            <span class="skill-name">Django</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="75%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item fade-up">
+          <div class="skill-header">
+            <span class="skill-name">HTML</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="90%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-item fade-up">
+          <div class="skill-header">
+            <span class="skill-name">CSS</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item fade-up">
+          <div class="skill-header">
+            <span class="skill-name">Data Analysis</span>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="78%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item fade-up">
+          <div class="skill-header">
+            <span class="skill-name">Microsoft Office</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-width="88%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PROYEK
+     ============================================================ -->
+<section id="proyek">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">Pengalaman &amp; <span>Proyek</span></h2>
+    <div class="section-divider fade-up"></div>
+
+    <div class="proyek-grid stagger">
+
+      <div class="proyek-card fade-up">
+        <div class="proyek-icon">Web</div>
+        <div class="proyek-title">Website Biodata Django</div>
+        <p class="proyek-desc">
+          Website biodata pribadi profesional yang dibangun menggunakan
+          Django, HTML5, dan CSS3. Menampilkan informasi pribadi, pendidikan,
+          skill, dan portofolio dengan desain modern dan responsif.
+          Siap di-deploy ke cloud platform.
+        </p>
+        <div class="proyek-tags">
+          <span class="proyek-tag">Django</span>
+          <span class="proyek-tag">Python</span>
+          <span class="proyek-tag">HTML5</span>
+          <span class="proyek-tag">CSS3</span>
+        </div>
+      </div>
+
+      <div class="proyek-card fade-up">
+        <div class="proyek-icon">Data</div>
+        <div class="proyek-title">Proyek Data Science</div>
+        <p class="proyek-desc">
+          Analisis dan pengolahan dataset menggunakan Python dengan
+          library Pandas, NumPy, dan Matplotlib. Proyek mencakup
+          eksplorasi data, pembersihan data, visualisasi, dan
+          pembuatan model prediksi sederhana.
+        </p>
+        <div class="proyek-tags">
+          <span class="proyek-tag">Python</span>
+          <span class="proyek-tag">Pandas</span>
+          <span class="proyek-tag">NumPy</span>
+          <span class="proyek-tag">Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="proyek-card fade-up">
+        <div class="proyek-icon">Desain</div>
+        <div class="proyek-title">Desain Poster</div>
+        <p class="proyek-desc">
+          Desain poster kreatif untuk berbagai keperluan akademik
+          dan organisasi menggunakan tools desain grafis digital.
+          Menggabungkan estetika visual dengan penyampaian pesan
+          yang efektif dan informatif.
+        </p>
+        <div class="proyek-tags">
+          <span class="proyek-tag">Desain Grafis</span>
+          <span class="proyek-tag">Canva</span>
+          <span class="proyek-tag">Kreatif</span>
+        </div>
+      </div>
+
+      <div class="proyek-card fade-up">
+        <div class="proyek-icon">Akademik</div>
+        <div class="proyek-title">Tugas Akademik</div>
+        <p class="proyek-desc">
+          Kumpulan tugas dan laporan akademik yang mencakup
+          berbagai mata kuliah pada Program Studi Sains Data.
+          Termasuk laporan praktikum, makalah ilmiah, dan
+          presentasi penelitian.
+        </p>
+        <div class="proyek-tags">
+          <span class="proyek-tag">Akademik</span>
+          <span class="proyek-tag">Sains Data</span>
+          <span class="proyek-tag">Penelitian</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     GALERI
+     ============================================================ -->
+<section id="galeri">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">Galeri <span>Foto</span></h2>
+    <div class="section-divider fade-up"></div>
+
+    <div class="galeri-tabs fade-up">
+      <button class="galeri-tab active" data-cat="all">Semua</button>
+      <button class="galeri-tab" data-cat="organisasi">Organisasi</button>
+    </div>
+
+    <div class="galeri-grid">
+
+      <div class="galeri-item" data-cat="organisasi">
+        <img src="{% static 'biodata/img/organisasi.jpeg' %}" alt="Foto Organisasi 1" />
+        <div class="galeri-overlay">
+          <div class="galeri-overlay-title">Foto Organisasi</div>
+          <div class="galeri-overlay-cat">Organisasi</div>
+        </div>
+      </div>
+
+      <div class="galeri-item" data-cat="organisasi">
+        <img src="{% static 'biodata/img/organisais3.jpeg' %}" alt="Foto Organisasi 3" />
+        <div class="galeri-overlay">
+          <div class="galeri-overlay-title">Kegiatan Organisasi</div>
+          <div class="galeri-overlay-cat">Organisasi</div>
+        </div>
+      </div>
+
+      <div class="galeri-item" data-cat="organisasi">
+        <img src="{% static 'biodata/img/organisaia2.jpeg' %}" alt="Foto Organisasi 2" />
+        <div class="galeri-overlay">
+          <div class="galeri-overlay-title">Rapat Organisasi</div>
+          <div class="galeri-overlay-cat">Organisasi</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     KONTAK
+     ============================================================ -->
+<section id="kontak">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">Hubungi <span>Saya</span></h2>
+    <div class="section-divider fade-up"></div>
+
+    <div class="kontak-grid">
+      <!-- Info Kontak -->
+      <div>
+        <div class="kontak-intro fade-up">
+          <h3>Mari Terhubung!</h3>
+          <p>
+            Saya terbuka untuk diskusi, kolaborasi, maupun peluang baru.
+            Jangan ragu untuk menghubungi saya melalui salah satu
+            platform di bawah ini.
+          </p>
+        </div>
+
+        <div class="kontak-items">
+
+          <a href="mailto:maulanailham4455@gmail.com" class="kontak-item fade-up">
+            <div class="kontak-item-icon email">Email</div>
+            <div>
+              <div class="kontak-item-label">Email</div>
+              <div class="kontak-item-value">maulanailham4455@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/6287745327237" target="_blank" rel="noopener" class="kontak-item fade-up">
+            <div class="kontak-item-icon wa">WA</div>
+            <div>
+              <div class="kontak-item-label">WhatsApp</div>
+              <div class="kontak-item-value">+62 877-4532-7237</div>
+            </div>
+          </a>
+
+           <a href="https://instagram.com/maulilhamrodhn04" target="_blank" rel="noopener" class="kontak-item fade-up">
+            <div class="kontak-item-icon ig">IG</div>
+            <div>
+              <div class="kontak-item-label">Instagram</div>
+              <div class="kontak-item-value">@maulilhamrodhn04</div>
+            </div>
+          </a>
+ 
+          <a href="https://github.com/KEZO-cmyk" target="_blank" rel="noopener" class="kontak-item fade-up">
+            <div class="kontak-item-icon gh">GH</div>
+            <div>
+              <div class="kontak-item-label">GitHub</div>
+              <div class="kontak-item-value">github.com/KEZO-cmyk</div>
+            </div>
+          </a>
+ 
+        </div>
+      </div>
+
+      <!-- Form Kontak -->
+      <div class="kontak-form fade-up">
+        <h3>Kirim Pesan</h3>
+        <form action="#" method="POST">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">MIR.</div>
+    <p class="footer-tagline">Mahasiswa Sains Data &middot; Inovasi melalui Data</p>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#biodata">Biodata</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#skill">Skill</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+
+    <p class="footer-copy">
+      &copy; 2026 <span>Maulana Ilham Romadhon</span> |
+      Program Studi Sains Data |
+      Fakultas Sains dan Teknologi
+    </p>
+  </div>
+</footer>
+
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" aria-label="Kembali ke atas" title="Kembali ke atas">&#8593;</button>
+
+
+<!-- JavaScript -->
+<script src="{% static 'biodata/js/main.js' %}"></script>
+</body>
+</html>
